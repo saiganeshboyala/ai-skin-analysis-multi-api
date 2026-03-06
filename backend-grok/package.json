@@ -1,0 +1,22 @@
+{
+  "name": "skin-analysis-backend-grok",
+  "version": "1.0.0",
+  "description": "AI-powered skin analysis backend with Grok Vision (x.ai)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.20.1",
+    "pdfkit": "^0.17.2",
+    "sharp": "^0.33.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

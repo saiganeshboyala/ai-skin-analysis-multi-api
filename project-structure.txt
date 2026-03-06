@@ -1,0 +1,22 @@
+.
+  .gitignore
+  DEPLOYMENT.md
+  LICENSE
+  QUICK-START.md
+  README.md
+  backend
+    .env.example
+    README.md
+    package.json
+    server.js
+  frontend
+    README.md
+    package.json
+    public
+      index.html
+    src
+      App.css
+      App.js
+      index.css
+      index.js
+  project-structure.txt
