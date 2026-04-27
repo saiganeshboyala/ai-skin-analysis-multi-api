@@ -21,88 +21,117 @@
 // ============================================================
 
 const BRANDED_PRODUCTS = [
-  // ── EXAMPLE PRODUCTS — Replace these with your actual products ──
 
   {
-    type: "Cleanser",
-    name: "Negative Purifying Gel Cleanser",
-    brand: "From Negative",
-    description: "A gentle yet effective gel cleanser that removes impurities without stripping the skin barrier. Formulated for all skin types.",
-    usage: "Twice daily",
-    keyIngredient: "Niacinamide 2%",
-    url: "https://www.fromnegative.com/",
-    targetConditions: ["all"]
-  },
-  {
     type: "Serum",
-    name: "Negative Brightening Vitamin C Serum",
+    name: "Chamomile Vitamin C & Alpha Arbutin Face Serum",
     brand: "From Negative",
-    description: "High-potency vitamin C serum that targets dark spots, uneven tone, and dullness for a radiant complexion.",
+    description: "Brightening serum with Chamomile, Vitamin C, and Alpha Arbutin that fades dark spots, evens skin tone, and delivers a radiant glow without irritation.",
     usage: "Once daily AM",
-    keyIngredient: "Vitamin C 15%",
-    url: "https://www.fromnegative.com/",
+    keyIngredient: "Vitamin C + Alpha Arbutin",
+    url: "https://www.fromnegative.com/products/chamomile-vitamin-c-serum",
     targetConditions: ["hyperpigmentation", "dark spots", "dullness", "uneven texture", "sun damage"]
   },
-  {
-    type: "Serum",
-    name: "Negative Anti-Aging Retinol Serum",
-    brand: "From Negative",
-    description: "Advanced retinol formula that reduces fine lines, wrinkles, and improves skin texture while minimizing irritation.",
-    usage: "Once daily PM",
-    keyIngredient: "Retinol 0.5%",
-    url: "https://www.fromnegative.com/",
-    targetConditions: ["wrinkles", "fine lines", "uneven texture", "enlarged pores"]
-  },
-  {
-    type: "Moisturizer",
-    name: "Negative Hydra Barrier Cream",
-    brand: "From Negative",
-    description: "Lightweight moisturizer that strengthens the skin barrier and provides 24-hour hydration without clogging pores.",
-    usage: "Twice daily",
-    keyIngredient: "Ceramides + Hyaluronic Acid",
-    url: "https://www.fromnegative.com/",
-    targetConditions: ["dryness", "dehydration", "redness", "all"]
-  },
-  {
-    type: "Sunscreen",
-    name: "Negative Invisible Shield SPF 50",
-    brand: "From Negative",
-    description: "Ultra-light, non-greasy sunscreen with broad-spectrum protection. Leaves no white cast and works under makeup.",
-    usage: "Every morning",
-    keyIngredient: "SPF 50 PA++++",
-    url: "https://www.fromnegative.com/",
-    targetConditions: ["all"]
-  },
+
   {
     type: "Toner",
-    name: "Negative Pore Refining Toner",
+    name: "Chamomile Vitamin C Toner Mist",
     brand: "From Negative",
-    description: "Exfoliating toner with BHA that unclogs pores, controls oil, and smooths skin texture.",
-    usage: "Once daily PM",
-    keyIngredient: "Salicylic Acid 2%",
-    url: "https://www.fromnegative.com/",
-    targetConditions: ["acne", "oiliness", "enlarged pores", "uneven texture"]
+    description: "Brightening and hydrating toner mist with Chamomile and Vitamin C. Preps skin for better serum absorption and boosts radiance with every spritz.",
+    usage: "Twice daily after cleansing",
+    keyIngredient: "Vitamin C + Chamomile Extract",
+    url: "https://www.fromnegative.com/products/chamomile-vitamin-c-toner",
+    targetConditions: ["dullness", "hyperpigmentation", "dehydration", "uneven texture"]
   },
+
   {
-    type: "Eye Cream",
-    name: "Negative Revive Eye Complex",
+    type: "Serum",
+    name: "Cica Niacinamide Face Serum 5%",
     brand: "From Negative",
-    description: "Targeted eye treatment that reduces dark circles, puffiness, and fine lines around the delicate eye area.",
-    usage: "Twice daily",
-    keyIngredient: "Peptides + Caffeine",
-    url: "https://www.fromnegative.com/",
-    targetConditions: ["dark circles", "wrinkles", "fine lines"]
+    description: "Calming serum with CICA and 5% Niacinamide that repairs the skin barrier, reduces redness, fades acne marks, and controls excess oil.",
+    usage: "Once daily PM",
+    keyIngredient: "CICA + Niacinamide 5%",
+    url: "https://www.fromnegative.com/products/cica-niacinamide-face-serum",
+    targetConditions: ["acne", "redness", "oiliness", "enlarged pores", "uneven texture", "dark spots"]
   },
+
+  {
+    type: "Toner",
+    name: "Cica Niacinamide Face Toner Mist",
+    brand: "From Negative",
+    description: "Calming and hydrating toner mist with CICA and Niacinamide. Soothes irritation, reduces redness, and preps skin for the rest of your routine.",
+    usage: "Twice daily after cleansing",
+    keyIngredient: "CICA + Niacinamide",
+    url: "https://www.fromnegative.com/products/cica-niacinamide-face-toner",
+    targetConditions: ["redness", "acne", "oiliness", "dehydration"]
+  },
+
   {
     type: "Mask",
-    name: "Negative Deep Detox Clay Mask",
+    name: "Nourishing Raspberry Shea Butter Lip Mask",
     brand: "From Negative",
-    description: "Weekly treatment mask that draws out impurities, absorbs excess oil, and tightens pores for clearer skin.",
-    usage: "1-2 times per week",
-    keyIngredient: "Kaolin Clay + Charcoal",
-    url: "https://www.fromnegative.com/",
-    targetConditions: ["acne", "oiliness", "enlarged pores"]
+    description: "Overnight lip mask with Raspberry and Shea Butter that deeply nourishes, repairs dry and chapped lips, and leaves them soft and plump by morning.",
+    usage: "Nightly as last step",
+    keyIngredient: "Raspberry Extract + Shea Butter",
+    url: "https://www.fromnegative.com/products/raspberry-lip-mask",
+    targetConditions: ["dryness", "dehydration"]
+  },
+
+  {
+    type: "Kit",
+    name: "The Sensitive Skin Kit",
+    brand: "From Negative",
+    description: "Complete routine kit for sensitive skin — calms, hydrates, and strengthens the skin barrier with CICA and Chamomile formulas working together.",
+    usage: "Morning & evening routine",
+    keyIngredient: "CICA + Chamomile + Niacinamide",
+    url: "https://www.fromnegative.com/products/calm-hydrate-barrier-routine",
+    targetConditions: ["redness", "dryness", "dehydration", "acne"]
+  },
+
+  {
+    type: "Kit",
+    name: "The Barrier Repair Kit",
+    brand: "From Negative",
+    description: "Targeted routine kit to repair a damaged skin barrier, calm breakouts, and restore balance — ideal for acne-prone and reactive skin types.",
+    usage: "Morning & evening routine",
+    keyIngredient: "CICA + Niacinamide + Alpha Arbutin",
+    url: "https://www.fromnegative.com/products/acne-calm-repair-routine",
+    targetConditions: ["acne", "redness", "enlarged pores", "oiliness", "uneven texture"]
+  },
+
+  {
+    type: "Kit",
+    name: "The Dryness Duo",
+    brand: "From Negative",
+    description: "A power pair of serum and toner designed to deeply hydrate, lock in moisture, and restore suppleness to dry and dehydrated skin.",
+    usage: "Morning & evening routine",
+    keyIngredient: "Hyaluronic Acid + Chamomile",
+    url: "https://www.fromnegative.com/products/the-dryness-duo",
+    targetConditions: ["dryness", "dehydration", "fine lines"]
+  },
+
+  {
+    type: "Kit",
+    name: "The Barrier Duo",
+    brand: "From Negative",
+    description: "Dual-action skin barrier formula that strengthens, soothes, and protects — reducing sensitivity and keeping skin resilient against environmental stressors.",
+    usage: "Daily AM & PM",
+    keyIngredient: "CICA + Ceramide-boosting actives",
+    url: "https://www.fromnegative.com/products/the-barrier-duo",
+    targetConditions: ["redness", "dryness", "dehydration", "uneven texture"]
+  },
+
+  {
+    type: "Kit",
+    name: "The Skin Reset System",
+    brand: "From Negative",
+    description: "Complete skin reset system combining brightening, calming, and barrier-repair actives for a full skin transformation — ideal for all skin concerns.",
+    usage: "Full AM & PM routine",
+    keyIngredient: "Vitamin C + CICA + Niacinamide",
+    url: "https://www.fromnegative.com/products/complete-skin-balance-system",
+    targetConditions: ["all"]
   }
+
 ];
 
 // ============================================================

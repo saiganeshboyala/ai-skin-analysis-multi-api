@@ -51,6 +51,13 @@ module.exports = {
       : ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:5001'],
   },
 
+  // Origins that are allowed to embed this app in an <iframe>.
+  // Set IFRAME_ALLOWED_ORIGINS in .env as a comma-separated list of URLs.
+  // Leave empty / unset to disable iframe embedding entirely.
+  iframeAllowedOrigins: process.env.IFRAME_ALLOWED_ORIGINS
+    ? process.env.IFRAME_ALLOWED_ORIGINS.split(',').map(s => s.trim()).filter(Boolean)
+    : [],
+
   upload: {
     maxFileSize: 10 * 1024 * 1024, // 10MB
     allowedMimes: ['image/jpeg', 'image/png', 'image/webp'],
